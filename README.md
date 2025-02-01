@@ -6,11 +6,16 @@
 - [Requirements](#requirements)
 - [Usage](#usage)
 - [Results](#results)
-- [License and References](#license-and-references)
 
 ## Overview
 
 This project implements a Visual-Inertial Odometry (VIO) system using a Multi-state Constraint Kalman Filter (MSCKF). It integrates data from an IMU and a stereo camera to accurately determine the robot's location and state. The project includes initialization of gravity and bias, batch IMU processing, state propagation using a fourth-order Runge-Kutta integration technique, state augmentation, and feature observation addition. Evaluations are conducted using the EuRoC dataset.
+
+| **Trajectory Overview** |  |
+|----------|----------|
+| ![Alt1](Images/Trajectory_side_view.png) | ![Alt2](Images/Trajectory_top_view.png) |
+| Side View  | Top View  |
+
 
 ## Requirements
 
@@ -53,8 +58,10 @@ python Code/vio.py --path path/to/your/EuRoC_MAV_dataset/MH_01_easy
 
 ## Results
 
-Evaluations are performed using the EuRoC dataset. The absolute median trajectory error (ATE) and root mean square translation error (RMSE) are used to measure the performance.
+Evaluations are performed using the EuRoC dataset. The absolute median trajectory error (ATE) and root mean square translation error (RMSE) are used to measure the performance. The absolute median trajectory error (ATE) is 0.07072745620375322 m and root mean square translation error (RMSE) is 0.08225543715390592 m.
 
-## License and References
+## Author
+Abhijeet Sanjay Rathi
 
-Follow [license of msckf_vio](https://github.com/KumarRobotics/msckf_vio/blob/master/LICENSE.txt). Code is adapted from [this implementation](https://github.com/uoip/stereo_msckf).
+## Acknowledgments
+Special thanks to the Computer Vision course instructors and teaching assistants for their guidance and support.
