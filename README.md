@@ -1,22 +1,21 @@
 # Visual-Inertial Odometry using Multi-state Constraint Kalman Filter (MSCKF)
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Requirements](#requirements)
-- [Usage](#usage)
-- [Results](#results)
-
 ## Overview
-
-This project implements a Visual-Inertial Odometry (VIO) system using a Multi-state Constraint Kalman Filter (MSCKF). It integrates data from an IMU and a stereo camera to accurately determine the robot's location and state. The project includes initialization of gravity and bias, batch IMU processing, state propagation using a fourth-order Runge-Kutta integration technique, state augmentation, and feature observation addition. Evaluations are conducted using the EuRoC dataset.
 
 | **Trajectory Overview** |  |
 |----------|----------|
 | ![Alt1](Images/Trajectory_side_view.png) | ![Alt2](Images/Trajectory_top_view.png) |
 | Side View  | Top View  |
 
+This project implements a Visual-Inertial Odometry (VIO) system using a Multi-state Constraint Kalman Filter (MSCKF). It integrates data from an IMU and a stereo camera to accurately determine the robot's location and state. The project includes initialization of gravity and bias, batch IMU processing, state propagation using a fourth-order Runge-Kutta integration technique, state augmentation, and feature observation addition. Evaluations are conducted using the EuRoC dataset.
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Requirements](#requirements)
+- [Usage](#usage)
+- [Results](#results)
+  
 ## Requirements
 
 To run this script, you need Python 3 and the following Python packages:
